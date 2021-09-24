@@ -14,10 +14,13 @@ async def check_or_set_log_channel():
             log_channel = await EXPUB.create_channel(title="Exp Userbot Logs", description="Logs of your Exp Userbot")
             welcome_to_expub = f"""
 **Welcome to Exp Userbot**
+
 Thanks for trying Exp Userbot. If you found any error, bug or even a Feature Request please report it at **@kenbotsupport**
-**⌲ Quick Start,**
-If you don't know how to use this Userbot please send `{Config.CMD_PREFIX}help` in any chat. It'll show all plugins your userbot has. You can use those plugin names to get info about how to use it. Also check out [Docs](https://nexa-userbot.netlify.app)
- **~ Exp Userbot Authors**"""
+
+**⌲ Quick Start**
+
+If you don't know how to use this Userbot please send `{Config.CMD_PREFIX}help` in any chat. It'll show all plugins your userbot has. You can use those plugin names to get info about how to use it.
+ **~ Exp Userbot [Authors](https://t.me/xgothboi)**"""
             log_channel_id = log_channel.id
             await set_log_channel(log_channel_id)
             await EXPUB.send_message(chat_id=log_channel_id, text=welcome_to_expub, disable_web_page_preview=True)
