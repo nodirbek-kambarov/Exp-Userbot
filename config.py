@@ -9,3 +9,4 @@ class Config(object):
     MONGODB_URL = os.environ.get("MONGODB_URL")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")
+    ALIVE_PIC = os.environ.get("ALIVE_PIC", "https://telegra.ph/file/cc537048e2d3050ea08d0.jpg")
