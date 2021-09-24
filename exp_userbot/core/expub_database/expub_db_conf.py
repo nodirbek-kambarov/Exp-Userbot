@@ -22,7 +22,7 @@ async def get_log_channel():
 
 async def set_custom_alive_msg(a_text=None):
     if a_text is None:
-        alive_msg = "Heya, I'm Using EXP Userbot"
+        alive_msg = "I'm Alive Master"
     else:
         alive_msg = a_text
     p_alive_msg = await expub_conf.find_one({"_id": "CUSTOM_ALIVE_MSG"})
