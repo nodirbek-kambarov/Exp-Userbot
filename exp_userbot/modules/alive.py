@@ -69,13 +69,15 @@ async def pyroalive(_, message: Message):
     alive_pic = "cache/EXPUB.png"
     alive_msg = f"""
 **{custom_alive_msg}**
-**Exp UserBot is Alive**
+
+**Exp UserBot is Running**
     
     **Python Version:** `{python_version}`
     **Pyrogram Version:** `{pyrogram_version}`
     **Exp Userbot Version:** `{EXPUB_VERSION}`
     **Uptime: `{uptime}`**
-**Deploy Your Own: @kenbotaupport**"""
+
+**Deploy Your Own: @kenbotsupport**"""
     await alive_bef_msg.delete()
     await EXPUB.send_photo(chat_id=message.chat.id, photo=alive_pic, caption=alive_msg)
 
