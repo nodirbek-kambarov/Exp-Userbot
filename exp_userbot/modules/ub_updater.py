@@ -57,7 +57,7 @@ async def updateme_requirements():
 
 @expub_on_cmd(command="update", modlue=mod_file)
 async def upstream(client, message):
-    status = await e_or_r(expub_message=message, msg_text=f"`Checking For Updates from` [Exl-Userbot]({UPSTREAM_REPO_URL}) `Repo...`")
+    status = await e_or_r(expub_message=message, msg_text=f"`Checking For Updates from` [Exp-Userbot]({UPSTREAM_REPO_URL}) `Repo...`")
     conf = get_arg(message)
     off_repo = UPSTREAM_REPO_URL
     txt = "`Oops! Updater Can't Continue...`"
@@ -78,13 +78,13 @@ async def upstream(client, message):
         repo = Repo.init()
         origin = repo.create_remote("upstream", off_repo)
         origin.fetch()
-        repo.create_head("master", origin.refs.master)
-        repo.heads.master.set_tracking_branch(origin.refs.master)
-        repo.heads.master.checkout(True)
+        repo.create_head("main", origin.refs.main)
+        repo.heads.main.set_tracking_branch(origin.refs.main)
+        repo.heads.main.checkout(True)
     ac_br = repo.active_branch.name
-    if ac_br != "master":
+    if ac_br != "main":
         await status.edit(
-            f"`Can't update your Exp-Userbot becuase you're using a custom branch.` \n\n**Default Branch:** `master` \n**You are on:** `{ac_br}` \n`Please change to master branch.`"
+            f"`Can't update your Exp-Userbot becuase you're using a custom branch.` \n\n**Default Branch:** `main` \n**You are on:** `{ac_br}` \n`Please change to main branch.`"
         )
         repo.__del__()
         return
