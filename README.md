@@ -3,14 +3,14 @@
 </h2>
 
 <p align="center">
-  <a href="#"><img src="https://telegra.ph/file/45eea1e04fc6ab094330d.jpg" width="500" height="300"></a> </br>
+  <a href="#"><img src="https://telegra.ph/file/45eea1e04fc6ab094330d.jpg" width="250" height="250"></a> </br>
   <b>A Simple, Easy to use and light-weight Pyrogram Userbot</b>
 </p>
 
 <h4 align="center"> DISCLAIMER </p>
 
 ```
-                   ⚠️ DISCLAIMER ⚠️ ️
+           ⚠️ DISCLAIMER ⚠️ ️
    Exp-Userbot is used to help your account activities on Telegram
    We are not responsible for what you misuse in this repository
        !  Be careful when using this repository!
