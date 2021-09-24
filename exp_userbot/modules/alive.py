@@ -66,18 +66,18 @@ async def pyroalive(_, message: Message):
     alive_bef_msg = await e_or_r(expub_message=message, msg_text="`Processing...`")
     get_alive_msg = await get_custom_alive_msg()
     custom_alive_msg = get_alive_msg if get_alive_msg else "Heya, I'm Using Exp Userbot"
-    alive_pic = "cache/EXPUB.png"
+    alive_pic = f"{Config.ALIVE_PIC}"
     alive_msg = f"""
-**{custom_alive_msg}**
+****Heya I'm Exp-Userbot
 
-**Exp UserBot is Running**
+**{custom_alive_msg}**
     
     **Python Version:** `{python_version}`
     **Pyrogram Version:** `{pyrogram_version}`
     **Exp Userbot Version:** `{EXPUB_VERSION}`
     **Uptime: `{uptime}`**
 
-**Deploy Your Own: @kenbotsupport**"""
+**Deploy Your Own : [Exp-Userbot](https://t.me/KennedyProject/Exp-Userbot)**"""
     await alive_bef_msg.delete()
     await EXPUB.send_photo(chat_id=message.chat.id, photo=alive_pic, caption=alive_msg)
 
