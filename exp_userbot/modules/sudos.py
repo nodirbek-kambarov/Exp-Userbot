@@ -96,7 +96,7 @@ async def setmongovar(_, message: Message):
     await set_custom_var(var=variable, value=value)
     await setvr_msg.edit(f"**Successfully Added Custom Var** \n\n**Var:** `{variable}` \n**Val:** `{value}`")
 
-@ub_on_cmd(command="getvar", modlue=mod_file)
+@expub_on_cmd(command="getvar", modlue=mod_file)
 async def get_var(_, message: Message):
   g_var = await e_or_r(expub_message=message, msg_text="`Processing...`")
   var_g = get_arg(message)
