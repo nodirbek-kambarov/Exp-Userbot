@@ -227,3 +227,23 @@ async def upstream(event):
         await asyncio.sleep(10)
         await event.delete()
     return
+
+# Userbot restart module
+async def restart_expub():
+    if Config.HEROKU_API_KEY is not None:
+        heroku_conn = heroku3.from_key(Config.HEROKU_API_KEY)
+        server = heroku_conn.app(Config.HEROKU_APP_NAME)
+        server.restart()
+    else:
+        args = [sys.executable, "-m" "exp_userbot"]
+        execle(sys.executable, *args, environ)
+        exit()
+
+@expub_on_cmd(command="restart", modlue=mod_file)
+async def restart(client, message):
+    restart_msg = await e_or_r(expub_message=message, msg_text="`Processing...`")
+    await restart_msg.edit("`Exp-Userbot is restarting! Please wait...`")
+    try:
+        await restart_expub()
+    except Exception as e:
+        await restart_msg.edit(f"**Error:** `{e}`")
