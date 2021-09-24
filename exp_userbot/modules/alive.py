@@ -77,7 +77,7 @@ async def pyroalive(_, message: Message):
     **Exp Userbot Version:** `{EXPUB_VERSION}`
     **Uptime: `{uptime}`**
 
-**Deploy Your Own : [Github](https://t.me/KennedyProject/Exp-Userbot)**"""
+**Deploy Your Own : [Github](https://github.com/KennedyProject/Exp-Userbot)**"""
     await alive_bef_msg.delete()
     await EXPUB.send_photo(chat_id=message.chat.id, photo=alive_pic, caption=alive_msg)
 
