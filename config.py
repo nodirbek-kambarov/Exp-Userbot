@@ -10,5 +10,5 @@ class Config(object):
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")
     # Alive Logo 
-   ALIVE_PIC = os.environ.get(
-       "ALIVE_PIC") or "https://telegra.ph/file/cc537048e2d3050ea08d0.jpg"
+    ALIVE_PIC = os.environ.get(
+        "ALIVE_PIC") or "https://telegra.ph/file/cc537048e2d3050ea08d0.jpg"
