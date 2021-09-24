@@ -85,10 +85,10 @@ async def pyroalive(_, message: Message):
 async def pingme(_, message: Message):
     uptime = get_readable_time((time.time() - StartTime))
     start = datetime.now()
+    await .message.e_or_r("`Pinging...`")
     end = datetime.now()
     ping_time = (end - start).microseconds / 1000
-    ping_msg = await e_or_r(expub_message=message, msg_text="`Pinging...`")
-    await e_or_r(expub_message=message, msg_text=f"**Pong!!** `{ping_time} ms`\n**Uptime** - `{uptime}`", disable_web_page_preview=True)
+    await message.e_or_r(f"**Pong!!** `{ping_time} ms`\n**Uptime** - `{uptime}`")
 
 @expub_on_cmd(command="setalive", modlue=mod_file)
 async def pyroalive(_, message: Message):
