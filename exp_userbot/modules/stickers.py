@@ -19,7 +19,7 @@ from pyrogram.raw.types import InputStickerSetShortName
 from exp_userbot import EXPUB, CMD_HELP
 from config import Config
 from exp_userbot.helpers.pyrogram_help import get_arg, convert_to_image
-from exo_userbot.core.main_cmd import expub_on_cmd, e_or_r
+from exp_userbot.core.main_cmd import expub_on_cmd, e_or_r
 
 
 # Help
