@@ -87,7 +87,7 @@ async def pingme(_, message: Message):
     start = datetime.now()
     end = datetime.now()
     ping_time = (end - start).microseconds / 1000
-    ping_msg = await e_or_r(expub_message=message, msg_text="`Processing...`")
+    ping_msg = await e_or_r(expub_message=message, msg_text="`Pinging...`")
     await e_or_r(expub_message=message, msg_text=f"**Pong!!** `{ping_time} ms`\n**Uptime** - `{uptime}`", disable_web_page_preview=True)
 
 @expub_on_cmd(command="setalive", modlue=mod_file)
