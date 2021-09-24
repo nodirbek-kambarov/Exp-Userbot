@@ -118,13 +118,13 @@ async def upstream(client, message):
                     f"{changelog_str}\n\nDo `.update now` to update your Exp-Userbot",
                     disable_web_page_preview=True,
                 )
-           else:
-               await status.edit(
-                   f"\n**Exp-Userbot is Uptodate with** [{ac_br}]({UPSTREAM_REPO_URL}/tree/{ac_br})**\n",
-                   disable_web_page_preview=True,
-               )
-               repo.__del__()
-           return
+    if changelog == '' and force_update is False:
+        await status.edit(
+            f"\n**Exp-Userbot is Uptodate with** [{ac_br}]({UPSTREAM_REPO_URL}/tree/{ac_br})**\n",
+            disable_web_page_preview=True,
+        )
+        return repo.__del__()
+
     if Config.HEROKU_API_KEY is not None:
         heroku = heroku3.from_key(Config.HEROKU_API_KEY)
         heroku_app = None
