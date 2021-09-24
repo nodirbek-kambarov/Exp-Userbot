@@ -6,7 +6,7 @@ from pyrogram.types import Message
 
 from exp_userbot import CMD_HELP
 from exp_userbot.core.main_cmd import expub_on_cmd, e_or_r
-from nexp_userbot.core.expub_database.expub_db_conf import set_arq_key, get_arq_key
+from exp_userbot.core.expub_database.expub_db_conf import set_arq_key, get_arq_key
 from exp_userbot.helpers.pyrogram_help import get_arg
 from config import Config
 
