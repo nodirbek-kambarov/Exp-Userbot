@@ -3,7 +3,7 @@ import os
 from pyrogram import filters
 from pyrogram.types import Message
 
-from exp_userbot import EXPB, CMD_HELP
+from exp_userbot import EXPUB, CMD_HELP
 from exp_userbot.core.main_cmd import expub_on_cmd, e_or_r, expub_on_cf, SUDO_IDS
 from exp_userbot.helpers.pyrogram_help import get_arg
 from exp_userbot.core.expub_database.expub_db_gbans import gban_usr, get_gbanned, get_gban_reason, ungban_usr
