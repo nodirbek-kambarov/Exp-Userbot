@@ -1,7 +1,15 @@
 echo "
-============ Exp Userbot ============
-Starting Now...
-Copyright (c) 2021 KennedyProject | @kenbotsupport
+RUNNING THE
+
+       ███████╗██╗  ██╗██████╗ 
+       ██╔════╝╚██╗██╔╝██╔══██╗
+       █████╗   ╚███╔╝ ██████╔╝
+       ██╔══╝   ██╔██╗ ██╔═══╝ 
+       ███████╗██╔╝ ██╗██║     
+       ╚══════╝╚═╝  ╚═╝╚═╝    
+             TELEGRAM USERBOT
+
+Copyright (c) 2021 KennedyProject
 "
 
 start_expub () {
