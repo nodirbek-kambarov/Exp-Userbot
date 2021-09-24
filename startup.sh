@@ -1,13 +1,7 @@
 echo "
-RUNNING THE
+RUNNING THE EXP-USERBOT
 
-       ███████╗██╗  ██╗██████╗ 
-       ██╔════╝╚██╗██╔╝██╔══██╗
-       █████╗   ╚███╔╝ ██████╔╝
-       ██╔══╝   ██╔██╗ ██╔═══╝ 
-       ███████╗██╔╝ ██╗██║     
-       ╚══════╝╚═╝  ╚═╝╚═╝    
-             TELEGRAM USERBOT
+Congratulations Your userbot has been actived
 
 Copyright (c) 2021 KennedyProject
 "
