@@ -68,7 +68,7 @@ async def pyroalive(_, message: Message):
     custom_alive_msg = get_alive_msg if get_alive_msg else "Heya, I'm Using Exp Userbot"
     alive_pic = f"{Config.ALIVE_PIC}"
     alive_msg = f"""
-****Heya I'm Exp-Userbot
+**Heya I'm Using Exp-Userbot**
 
 **{custom_alive_msg}**
     
@@ -77,7 +77,7 @@ async def pyroalive(_, message: Message):
     **Exp Userbot Version:** `{EXPUB_VERSION}`
     **Uptime: `{uptime}`**
 
-**Deploy Your Own : [Exp-Userbot](https://t.me/KennedyProject/Exp-Userbot)**"""
+**Deploy Your Own : [Github](https://t.me/KennedyProject/Exp-Userbot)**"""
     await alive_bef_msg.delete()
     await EXPUB.send_photo(chat_id=message.chat.id, photo=alive_pic, caption=alive_msg)
 
@@ -88,7 +88,7 @@ async def pingme(_, message: Message):
     end = datetime.now()
     ping_time = (end - start).microseconds / 1000
     ping_msg = await e_or_r(expub_message=message, msg_text="`Processing...`")
-    await e_or_r(expub_message=message, msg_text=f"**Pong!!** `{ping_time} ms`\nUptime - {uptime}", disable_web_page_preview=True)
+    await e_or_r(expub_message=message, msg_text=f"**Pong!!** `{ping_time} ms`\n**Uptime** - `{uptime}`", disable_web_page_preview=True)
 
 @expub_on_cmd(command="setalive", modlue=mod_file)
 async def pyroalive(_, message: Message):
