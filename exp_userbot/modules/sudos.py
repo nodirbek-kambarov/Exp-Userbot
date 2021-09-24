@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from exp_userbot import CMD_HELP
 from exp_userbot.core.main_cmd import expub_on_cmd, e_or_r
 from exp_userbot.helpers.pyrogram_help import get_arg
-from exp_userbot.core.expub_database.ub_db_conf import set_custom_var, get_custom_var
+from exp_userbot.core.expub_database.expub_db_conf import set_custom_var, get_custom_var
 from exp_userbot.core.expub_database.expub_db_sudos import add_sudo, remove_sudo, check_if_sudo
 from .ub_updater import restart_expub
 from config import Config
